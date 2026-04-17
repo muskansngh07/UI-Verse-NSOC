@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  display: flex;
+  display: flex; 
   flex: 1;
 }
 
@@ -151,6 +151,10 @@ body {
   padding: 20px;
   border-radius: 14px;
   border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 220px;
   transition: 0.3s;
 }
 
@@ -187,6 +191,9 @@ body {
   margin-bottom: 30px;
 }
 
+/* Buttons */
+ .button-group {
+  display: flex;
 .hero h1 {
   font-size: 32px;
 }
@@ -225,6 +232,25 @@ body {
   margin-top: 20px;
 }
 
+@media (max-width: 770px) {
+  .layout {
+    grid-template-columns: 1fr; 
+  }
+
+  .page-header {
+    justify-content: center;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* Home Layout */
+.home {
+  display: block;
 .privacy-wrapper p {
   text-align: center;
   color: #444;
@@ -262,7 +288,6 @@ body {
   color: #007bff;
 }
 
-<<<<<<< HEAD
 /* ================= MOBILE ================= */
 @media (max-width: 900px) {
 
@@ -287,7 +312,6 @@ body {
   .footer-container {
     grid-template-columns: 1fr;
   }
-=======
 .socials span:hover {
   transform: scale(1.2);
 }
@@ -395,7 +419,6 @@ body {
 .dark-mode #theme-toggle {
   background: #1e293b;
   color: #ffffff;
->>>>>>> fee0a1f (Added darkmode)
 }
 /* Card Base Style */
 .card {
