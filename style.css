@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background:#f4f6fb;
+  background:#ffffff;
 }
 
 .container {
@@ -210,58 +210,67 @@ body {
 }
 
 /* ================= POLICY PAGES ================= */
-.full-page {
-  margin-left: 280px;
-  margin-top: 80px;
-  padding: 20px;
-}
 
 .privacy-wrapper {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px;
-  background: white;
-  border-radius: 12px;
-}
-
-.privacy-wrapper h1 {
-  text-align: center;
-  font-size: 36px;
-}
-
-.privacy-wrapper h2 {
-  text-align: center;
-  margin-top: 20px;
-}
-
-@media (max-width: 770px) {
-  .layout {
-    grid-template-columns: 1fr; 
-  }
-
-  .page-header {
-    justify-content: center;
-  }
-
-  .button-group {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-
-/* Home Layout */
-.home {
+  margin-left: 280px; 
+  margin-top: 80px;   
+  background-color: #ffffff;
+  min-height: 100vh; 
+  padding: 60px 0;    
   display: flex;
   flex-direction: column;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  align-items: center; 
+}
+
+.container-1 {
+  width: 90%;         
+  max-width: 1100px;  
+  margin: 0 auto;
+}
+
+.floating-box {
+  width: 100%;        
+  background-color: #1a1f35;
+  color: #ffffff;
+  padding: 50px 60px; 
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 25px 60px rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.floating-box:hover {
+  transform: translateY(-5px);
+}
+
+
+.privacy-wrapper h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .privacy-wrapper p {
   text-align: center;
-  color: #444;
+  color: #000000;
+  margin-bottom: 40px;
+  font-size: larger;
 }
+
+.floating-box h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  text-align: left; 
+}
+
+.floating-box p, .floating-box ul {
+  color: white;
+  text-align: left;
+  line-height: 1.8;
+}
+
 
 /* ================= FOOTER ================= */
 .footer {
@@ -597,3 +606,7 @@ body {
   border-radius: 12px;
   width: 200px;
 }
+
+
+
+
