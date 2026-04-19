@@ -344,6 +344,14 @@ body {
 }
 /* 🌙 DARK MODE (ADDED) */
 
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
 .dark-mode {
   background: #0f172a;
   color: #e5e7eb;
